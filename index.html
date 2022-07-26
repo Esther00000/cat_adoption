@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Noto+Serif+TC:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>cat adoption</title>
+  </head>
+  <body>
+    <!-- hero section -->
+    <section id="hero">
+      <div class="section-container mb-40 px-10 pt-16">
+        <img
+          src="./images/cat-logo.png"
+          alt="logo"
+          class="mx-auto my-16 w-96"
+        />
+        <h3 class="main-title">find your new companion</h3>
+        <p
+          class="max-w-3xl mx-auto mb-10 text-2xl text-darkGrayishBlue font-exblack"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+          ea repellat neque unde magnam consequuntur corrupti quibusdam est?
+        </p>
+        <!-- button-container -->
+        <div class="btns">
+          <a
+            href="#secondary"
+            class="btn bg-strongCyan md:w-1/2 hover:opacity-80 duration-200"
+            >Explore</a
+          >
+
+          <a
+            href="#footer"
+            class="btn bg-lightBlue md:w-1/2 hover:opacity-80 duration-200"
+            >Adopt</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- secondary title section -->
+    <section id="secondary">
+      <div class="section-container my-20 px-10">
+        <h3 class="main-title">reasons why you should adopt a cat</h3>
+      </div>
+    </section>
+
+    <!-- reason  section -->
+    <section id="image-box">
+      <div class="section-container my-20 px-10">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!--  image  -->
+          <div class="flex items-center md:w-1/2">
+            <img
+              src="./images/cat-feature.png"
+              alt=""
+              class="md:absolute top-50% right-[50%]"
+            />
+          </div>
+          <!-- description -->
+          <div class="container space-y-20 md:w-1/2">
+            <!-- adventage1 -->
+            <div class="box bg-lightBlue bg-opacity-80">
+              <img
+                src="./images/cat.png"
+                alt=""
+                class="absolute w-32 h-32 -top-12 -left-12 -rotate-[35deg]"
+              />
+              <h5 class="title">CATS ARE GOOD FOR YOU</h5>
+              <p class="more content max-w-md md:hidden">
+                Becoming a cat owner could be good for your mental health.
+                Psychological reports suggest that cats can reduce loneliness in
+                those who live on their own, plus having to feed and groom a cat
+                can lend routine to your day and help you restructure your life.
+              </p>
+              <div
+                class="readBtn absolute bottom-2 right-6 cursor-pointer"
+                onclick="showText()"
+              >
+                read more
+              </div>
+            </div>
+            <!-- adventage2 -->
+            <div class="box bg-strongCyan bg-opacity-80">
+              <img
+                src="./images/cat.png"
+                alt=""
+                class="absolute w-32 h-32 -top-12 -right-12 rotate-45"
+              />
+              <h5 class="title">CATS KEEP YOU YOUNG</h5>
+              <p class="more content max-w-md md:hidden">
+                According to Harvard, mental stimulation keeps your mind fit and
+                helps stave off cognitive decline – keeping you young for
+                longer.3 Cats love to play and will enjoy chasing a toy, looking
+                for something you hide, and gently "wrestling" with your hand-
+                all great mentally stimulating acts for pet and owner.
+              </p>
+              <div
+                class="readBtn absolute bottom-2 right-6 cursor-pointer"
+                onclick="showText()"
+              >
+                read more
+              </div>
+            </div>
+            <!-- adventage3 -->
+            <div class="box bg-lightBlue bg-opacity-80">
+              <img
+                src="./images/cat.png"
+                alt=""
+                class="absolute w-32 h-32 -top-12 -left-12 -rotate-[35deg]"
+              />
+              <h5 class="title">CAT ADOPTION SAVES LIVES</h5>
+              <p class="more content max-w-md md:hidden">
+                Every cat that gets adopted from a cat shelter or rescue charity
+                is a cat's life that you've saved. Plus, taking your new cat
+                home frees up more space for other cats in need.
+              </p>
+              <div
+                class="readBtn absolute bottom-2 right-6 cursor-pointer"
+                onclick="showText()"
+              >
+                read more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tips section -->
+    <section
+      id="tips"
+      class="flex flex-col items-center justify-center text-black"
+    >
+      <div class="section-container">
+        <h3 class="main-title">Pet adoption tip</h3>
+        <div
+          class="container space-y-16 md:flex-row md:space-y-0 md:px-28 md:space-x-8"
+        >
+          <!-- tip1 -->
+          <div class="box bg-white md:pb-28">
+            <img
+              src="https://prod-assets.production.omega.aapdev.org/img/Animation-CatLaser.png"
+              alt=""
+              id="tip2"
+              class="mx-auto rounded-lg"
+            />
+            <h5 class="title">Why adoption over buying</h5>
+            <p class="content">
+              Did you know that over 1,000 people per hour run a search ?<span
+                class="more hidden"
+                >right here looking to adopt a pet?Pet adoption is quickly
+                becoming the preferred way to find a new dog or cat, and rightly
+                so, there are many benefits to adopting a pet. Pet adoption fees
+                are usually much lower than buying from a breeder. You’re also
+                likely to find a pet who’s already learned a few things.
+                Adoptable pets are often already housetrained, good with kids,
+                and do well with other pets. And don’t forget the wonderful
+                feeling you get from saving a life!
+              </span>
+            </p>
+            <div
+              class="readBtn btn md:absolute right-4 bottom-8 bg-lightBlue text-lg font-black cursor-pointer"
+              onclick="showText()"
+            >
+              read more
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--News and tools section  -->
+    <section id="tool">
+      <div class="section-container">
+        <h3 class="main-title">News and tools from Adopt a Pet</h3>
+        <div
+          class="container space-y-8 md:flex-row md:space-y-0 md:space-x-8 md:items-end"
+        >
+          <!-- tool-1 -->
+          <div class="text-center flex-1">
+            <img
+              src="./images/Cat-1.png"
+              alt=""
+              class="w-80 md:w-64 mx-auto relative top-20 md:-rotate-45 md:top-12"
+            />
+            <div
+              class="flex flex-col justify-between text-black pt-16 px-15 bg-grayisBlue bg-opacity-30 rounded-3xl"
+            >
+              <h5 class="title">How It Works</h5>
+              <p class="content py-8 pb-12">
+                Get the breakdown on how to use Adopt a Pet and navigate the pet
+                adoption process.
+              </p>
+              <div class="w-full h-5 bg-strongCyan rounded-b-3xl"></div>
+            </div>
+          </div>
+          <!-- tool-2 -->
+          <div class="text-center flex-1">
+            <img
+              src="./images/Cat-2.png"
+              alt=""
+              class="md:w-80 mx-auto relative top-28"
+            />
+            <div
+              class="flex flex-col justify-between text-black pt-16 px-15 bg-grayisBlue bg-opacity-30 rounded-3xl"
+            >
+              <h5 class="title">Rehome a Pet</h5>
+              <p class="content py-8 pb-12">
+                Did you know we’re assisting pet owners who can no longer care
+                for their pets to find new loving homes for them? Rehome can
+                help!
+              </p>
+              <div class="w-full h-5 bg-lightBlue rounded-b-3xl"></div>
+            </div>
+          </div>
+          <!-- tool-3 -->
+          <div class="text-center flex-1">
+            <img
+              src="./images/Cat-3.png"
+              alt=""
+              class="w-96 md:w-60 mx-auto relative top-32"
+            />
+            <div
+              class="flex flex-col justify-between text-black pt-16 px-15 bg-grayisBlue bg-opacity-30 rounded-3xl"
+            >
+              <h5 class="title">Find Your Pet</h5>
+              <p class="content py-8 pb-12">
+                With Premium New Pet Alerts, you’ll be notified instantly when
+                you have a new match!
+              </p>
+              <div class="w-full h-5 bg-strongCyan rounded-b-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+      <div class="section-container">
+        <h3 class="main-title capitalize">Feacture cute cats for adopt</h3>
+        <div class="container space-y-8">
+          <div class="box bg-lightBlue bg-opacity-60">
+            <img
+              src="./images/cat.png"
+              alt=""
+              class="absolute w-32 h-32 -top-12 -left-12 -rotate-[35deg]"
+            />
+            <img
+              src="./images/cat.png"
+              alt=""
+              class="absolute hidden w-32 h-32 -bottom-12 -right-12 rotate-[135deg] md:inline-block"
+            />
+            <h5 class="title">You are in great paws</h5>
+            <p class="content md:text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              cum!
+            </p>
+            <div class="h-16 pt-4 flex justify-center">
+              <input
+                type="email"
+                class="h-16 px-9 border-none outline-none rounded-l-2xl placeholder:text-lg md:w-4/6 md:placeholder:text-2xl"
+                placeholder="Your e-mail address"
+              />
+              <button class="h-16 px-4 rounded-r-2xl bg-strongCyan uppercase">
+                subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script>
+      const container = document.querySelectorAll(".container");
+      const readBtn = document.querySelector(".readBtn");
+
+      function showText() {
+        const current = event.target;
+        const isReadMoreBtn = current.className.includes("readBtn");
+
+        const currentText = event.target.parentNode.querySelector(".more");
+        const readBtn = event.target.parentNode.querySelector(".readBtn");
+
+        if (currentText.style.display === "none") {
+          readBtn.innerHTML = "- read less";
+          currentText.style.display = "inline";
+        } else {
+          readBtn.innerHTML = "+ read more";
+          currentText.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
